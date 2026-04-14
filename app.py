@@ -425,7 +425,7 @@ st.set_page_config(
     page_title="Luigi AI Assistant | Luigi Solutions",
     page_icon="🏛️",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -448,10 +448,16 @@ html, body, [class*="css"] {
 [data-testid="stToolbar"] { display: none !important; }
 header[data-testid="stHeader"] { display: none !important; }
 
-/* ── Mobile: remove extra top padding from block container ── */
+/* ── Mobile: push content below browser chrome ── */
 @media (max-width: 768px) {
     .block-container {
-        padding-top: 1rem !important;
+        padding-top: 3.5rem !important;
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    /* Hide the floating sidebar hamburger button on mobile */
+    [data-testid="stSidebarCollapsedControl"] {
+        display: none !important;
     }
 }
 
