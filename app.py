@@ -443,9 +443,17 @@ html, body, [class*="css"] {
 }
 
 /* ── Hide Streamlit chrome ──────────────────────────────── */
-#MainMenu, footer { visibility: hidden; }
-.stDeployButton { display: none; }
-[data-testid="stToolbar"] { visibility: hidden; }
+#MainMenu, footer { display: none !important; }
+.stDeployButton { display: none !important; }
+[data-testid="stToolbar"] { display: none !important; }
+header[data-testid="stHeader"] { display: none !important; }
+
+/* ── Mobile: remove extra top padding from block container ── */
+@media (max-width: 768px) {
+    .block-container {
+        padding-top: 1rem !important;
+    }
+}
 
 /* ── Sidebar ─────────────────────────────────────────────── */
 [data-testid="stSidebar"] {
