@@ -10,6 +10,8 @@ Built with Python, Streamlit, and the Anthropic Claude API.
 
 The Luigi AI Assistant walks users through every step of the **Build an App in a Day™** curriculum — the same material taught at Luigi Solutions LLC live events — so anyone can access expert guidance 24/7, on their own schedule.
 
+It teaches users how to build a real web app step by step using **The LUIGI Method™** — breaking the process into five clear, structured stages that take you from raw idea all the way to a live, working app.
+
 The assistant:
 - Detects your experience level automatically (beginner → advanced) and adapts its language and pacing
 - Guides you through all five LUIGI steps with a live visual progress indicator
